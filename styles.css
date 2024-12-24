@@ -92,7 +92,7 @@ main {
     display: flex;
     gap: 0.5rem;
     background: rgba(30, 30, 30, 0.7);
-    padding: 0.5rem;
+    padding: 0rem 0.5rem;
     border-radius: 24px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
@@ -107,7 +107,7 @@ main {
     border: none;
     color: var(--text-primary);
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .search-container input:focus {
