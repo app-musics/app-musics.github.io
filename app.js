@@ -236,9 +236,12 @@ class MusicApp {
         `;
 
         // Event Listeners
-        card.querySelector('.play-overlay').addEventListener('click', (e) => {
+        card.querySelector('.play-btn').addEventListener('click', (e) => {
             e.stopPropagation();
-            this.player.loadAndPlay(track);
+            console.log('Play button clicked, track:', track);
+            if (this.player) {
+                this.player.loadAndPlay(track);
+            }
         });
 
         card.querySelector('.favorite-btn').addEventListener('click', (e) => {
