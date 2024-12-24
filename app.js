@@ -219,18 +219,18 @@ class MusicApp {
                     <ion-icon name="play-circle-outline"></ion-icon>
                 </button>
             </div>
-            <div class="info">
-                <h3>${track.metadata.title}</h3>
-                <p>${track.metadata.artist}</p>
-                <div class="card-actions">
-                    <button class="action-btn favorite-btn ${isFavorite ? 'active' : ''}" title="${isFavorite ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}">
+            <div class="card-actions">
+                    <button class="action-btn play-btn" title="Reproduzir">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                    </button>
+                    <button class="action-btn favorite-btn ${isFavorite ? 'active' : ''}" 
+                            title="${isFavorite ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}">
                         <ion-icon name="${isFavorite ? 'heart' : 'heart-outline'}"></ion-icon>
                     </button>
                     <button class="action-btn share-btn" title="Compartilhar">
                         <ion-icon name="share-social-outline"></ion-icon>
                     </button>
                 </div>
-            </div>
         `;
 
         // Event Listeners
