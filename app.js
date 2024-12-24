@@ -214,12 +214,13 @@ class MusicApp {
         
         card.innerHTML = `
             <div class="card-thumbnail">
-                <img src="${track.type === 'youtube' ? track.metadata.thumbnail : 'https://waltemar.com.br/youtube/placeholder.jpg'}" alt="${track.metadata.title}">
-                <button class="play-overlay">
-                    <ion-icon name="play-circle-outline"></ion-icon>
-                </button>
+                <img src="${track.metadata.thumbnail}" alt="${track.metadata.title}" 
+                     onerror="this.src='assets/images/placeholder.jpg'">
             </div>
-            <div class="card-actions">
+            <div class="info">
+                <h3>${track.metadata.title}</h3>
+                <p>${track.metadata.artist}</p>
+                <div class="card-actions">
                     <button class="action-btn play-btn" title="Reproduzir">
                         <ion-icon name="play-circle-outline"></ion-icon>
                     </button>
@@ -231,6 +232,7 @@ class MusicApp {
                         <ion-icon name="share-social-outline"></ion-icon>
                     </button>
                 </div>
+            </div>
         `;
 
         // Event Listeners
