@@ -123,7 +123,7 @@ class MusicApp {
     async searchYouTube(query) {
         try {
             // Simulação da API do YouTube enquanto não temos a chave
-            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(query + ' music')}&type=video&videoCategoryId=10&maxResults=6&key=AIzaSyDav4Z6AYnfUX0L96MZpg-IZAgciJqdcTY`);
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(query + ' music')}&type=video&videoCategoryId=10&maxResults=6&key=AIzaSyDSD1qRSM61xXXDk6CBHfbhnLfoXbQPsYY`);
             
             if (!response.ok) {
                 // Enquanto não temos a chave da API, vamos simular alguns resultados
